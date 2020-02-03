@@ -1,0 +1,51 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="Localhost/wordpress">Principal</a>
+</nav>
+<div class="row">
+    <div class="col">
+        <h1>Pistolas</h1>
+        <hr>
+        <div *ngIf="mostrar" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase.autor}}</h5>
+                <p class="card-text">{{frase.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar=!mostrar" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+        <div *ngIf="mostrar1" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase1.autor}}</h5>
+                <p class="card-text">{{frase1.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar1=!mostrar1" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+        <div *ngIf="mostrar2" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase2.autor}}</h5>
+                <p class="card-text">{{frase2.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar2=!mostrar2" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+        <div *ngIf="mostrar3" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase3.autor}}</h5>
+                <p class="card-text">{{frase3.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar3=!mostrar3" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+        <div *ngIf="mostrar4" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase4.autor}}</h5>
+                <p class="card-text">{{frase4.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar4=!mostrar4" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+        <div *ngIf="mostrar5" class="card text-white bg-dark mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase5.autor}}</h5>
+                <p class="card-text">{{frase5.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar5=!mostrar5" class="btn btn-outline-secondary btn-block">Mostrar/Ocultar</button>
+    </div>
+</div>
